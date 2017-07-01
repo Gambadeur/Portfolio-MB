@@ -1,0 +1,30 @@
+.containerWrap {
+    position: fixed;
+    z-index: 2;
+}
+
+.containerWrapUp {
+    width: 100%;
+    height: 40px;
+    top: 0;
+    margin: 0;
+    background-color: white;
+    position: fixed;
+
+}
+
+.containerWrapDown {
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    margin: 0;
+    background-color: white;
+    position: fixed;
+}
+
+.textLeft {
+    font-size: 11pt;
+    opacity: 0.76;
+    margin-left: 40px;
+    margin-top: 23px; 
+}
