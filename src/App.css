@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'ClanOT-Bold';
+  src: local('ClanOT-Bold'), url(./fonts/ClanOT-Bold.otf) format('otf');
+}
+
+@font-face {
+  font-family: 'ClanOT-Black';
+  src: local('ClanOT-Black'), url(./fonts/ClanOT-Black.otf) format('otf');
+}
+
 .App {
     font-family: 'Lato', sans-serif;
 }

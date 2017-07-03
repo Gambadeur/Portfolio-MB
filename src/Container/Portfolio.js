@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 import Home from './../Components/Home/Home';
 import Skills from './../Components/Skills/Skills';
 import Codepen from './../Components/CodePen/CodePen';
+import Form from './../Components/Form/Form';
 import WrapperExt from './../Components/WrapperExt/WrapperExt';
 import './portfolio.css';
-import {SectionsContainer, Section} from 'react-fullpage';
+import {SectionsContainer, Section, ScrollToTopOnMount } from 'react-fullpage';
 import BurgerMenu from './../Components/Menu/BurgerMenu';
 
 class Portfolio extends Component {
@@ -19,7 +20,7 @@ class Portfolio extends Component {
   render() {
     let options = {
       sectionClassName:     'section',
-      anchors:              ['Home', 'Skills', 'CodePen'],
+      anchors:              ['Home', 'Skills', 'CodePen', 'Form'],
       navigation:           false,
       verticalAlign:        false,
       sectionPaddingTop:    '0px',
@@ -32,15 +33,19 @@ class Portfolio extends Component {
             <WrapperExt />
             <BurgerMenu />
             <div className="portfolioContainer">
+              <ScrollToTopOnMount />
               <SectionsContainer {...options}>
                 <Section>
                   <Home />
                 </Section>
                 <Section>
-                <Skills />
+                  <Skills />
                 </Section>
                 <Section>
-                <Codepen />
+                  <Codepen />
+                </Section>
+                <Section>
+                  <Form />
                 </Section>
               </SectionsContainer>
             </div>

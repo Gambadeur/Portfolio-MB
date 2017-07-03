@@ -1,0 +1,48 @@
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+}
+
+.arrowContainer {
+    transform: rotate(270deg);
+}
+
+.arrowContainer svg {
+    animation: movearrow 3s linear infinite;
+  
+}
+
+.textArrow {
+}
+
+.arrowContainer span {
+    font-size: 10px;
+}
+
+@keyframes movearrow {
+    0%{
+        opacity: 0.7;
+        padding-right: 0px;
+    }
+    25% {
+        opacity: 0.8;
+        padding-right: 5px;
+    }
+    50% {
+        opacity: 0.9;
+        padding-right: 10px;
+    }
+    75% {
+        opacity: 0.8;
+        padding-right: 5px;
+    }
+    100% {
+        opacity: 0.7;
+        padding-left: 0px;
+    }
+}
+

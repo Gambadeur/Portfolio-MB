@@ -6,9 +6,12 @@
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
     "react": "^15.6.1",
+    "react-addons-css-transition-group": "^15.6.0",
     "react-dom": "^15.6.1",
     "react-fullpage": "^0.1.18",
-    "react-scripts": "1.0.8"
+    "react-router-dom": "^4.1.1",
+    "react-scripts": "1.0.8",
+    "react-transition-group": "^1.2.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar src/ -o src/",
