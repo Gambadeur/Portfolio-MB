@@ -8,7 +8,6 @@ class WrapperExt extends Component {
         return(
             <div className="containerWrap">
                 <div className="containerWrapUp">
-                    <div className="textLeft">Mathieu Blardone</div>
                 </div>
                  <div className="containerWrapDown">
                 </div>
