@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Home from './../Components/Home/Home';
 import Skills from './../Components/Skills/Skills';
 import Codepen from './../Components/CodePen/CodePen';
-import Codepen2 from './../Components/CodePen/CodePen2';
 import Form from './../Components/Form/Form';
 import WrapperExt from './../Components/WrapperExt/WrapperExt';
 import './portfolio.css';
@@ -46,8 +45,6 @@ class Portfolio extends Component {
                   <Skills />
 
                   <Codepen />
-              
-                  <Codepen2 />
                
                   <Form />
                 {/*</Section>
