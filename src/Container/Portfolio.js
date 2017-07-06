@@ -2,8 +2,9 @@ import React, { Component } from 'react';
 import Home from './../Components/Home/Home';
 import Skills from './../Components/Skills/Skills';
 import Codepen from './../Components/CodePen/CodePen';
-import Form from './../Components/Form/Form';
+import Contact from './../Components/Contact/Contact';
 import WrapperExt from './../Components/WrapperExt/WrapperExt';
+import Footer from './../Components/Footer/Footer';
 import './portfolio.css';
 // import {SectionsContainer, Section, ScrollToTopOnMount } from 'react-fullpage';
 import BurgerMenu from './../Components/Menu/BurgerMenu';
@@ -45,8 +46,10 @@ class Portfolio extends Component {
                   <Skills />
 
                   <Codepen />
-               
-                  <Form />
+
+                  <Contact />
+
+                  <Footer />
                 {/*</Section>
               </SectionsContainer>*/}
             </div>
