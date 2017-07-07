@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Crochet = () => (
+const CrochetElement = () => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
@@ -89,4 +89,4 @@ const Crochet = () => (
   </svg>
 )
 
-export default Crochet;
+export default CrochetElement;

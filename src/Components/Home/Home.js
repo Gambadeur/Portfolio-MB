@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import Arrow from './../DesignIcon/Arrow';
 import './home.css';
-import Bracket from './../../images/svg/bracket';
-import Crochet from './../../images/svg/crochet';
+// import BracketElement from './../../images/svg/bracket';
+// import CrochetElement from './../../images/svg/crochet';
+// import FildroitElement from './../../images/svg/fildroitok';
 
 class Home extends Component {
     constructor(props){
@@ -47,9 +48,9 @@ class Home extends Component {
     return (
       <div className="homeContainer">
         <div className="designItems" style={mouseAction} >
-
-          <div><Bracket /></div>
-          <div><Crochet /></div>
+          {/*<div><BracketElement /></div>
+          <div><CrochetElement /></div>
+          <div><FildroitElement /></div>*/}
         </div>
         
           

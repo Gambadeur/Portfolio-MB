@@ -21,3 +21,9 @@
     background-color: white;
     position: fixed;
 }
+
+.socialLinks {
+    position: absolute;
+    bottom: 0px;
+    right: 40px;
+}

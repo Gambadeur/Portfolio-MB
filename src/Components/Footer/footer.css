@@ -1,8 +1,9 @@
 .footerContainer {
-    height: 150px;
+    height: 110px;
     width: 100%;
     margin-bottom: 40px;
     display: flex;
+    /*border: 1px solid black;*/
 }
 
 .gridFooter {
@@ -13,8 +14,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    padding: 40px;
 }
 
+.gridFooter p {
+    line-height: 20px;
+}
 
 .logoFooter{
     width: 100%;
@@ -24,44 +29,12 @@
     align-items: center;
 }
 
-.circleLogoFooter {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: solid black 2px;
-    background-color: white;
-    color:rgb(90, 198, 213);
-    animation: leftrighttranslate 8s linear infinite;
+
+.animLogoFooter img {
+   animation: rotateBracketsFooter 10s linear infinite;
+   height: 20px;
 }
 
-@keyframes leftrighttranslate {
-    0% {
-        transform: translateX(-60px)
-    }
-    25% {
-        transform: translateX(0px)
-    }
-    50% {
-        transform: translateX(60px)
-    }
-
-    75% {
-        transform: translateX(0px)
-    }
-    100% {
-        transform: translateX(-60px)
-    }
-}
-
-
-.bracketsLogoFooter{
-    font-size: 20px;
-    animation: rotateBracketsFooter 3s linear infinite;
-    font-family: 'Helvetica', sans-serif;
-}
 
 @keyframes rotateBracketsFooter {
     from {
@@ -70,4 +43,127 @@
     to {
         transform: rotate(360deg);
     }
+}
+
+
+
+.logoFooter p {
+    color: rgb(90, 198, 213);
+    margin-right: 10px;
+}
+
+.arrowContact {
+  width: 35px;
+  height: 22px;
+  display: block;
+  margin: 0 auto;
+  animation: leftToRightarrow 4s linear infinite;
+}
+
+@keyframes leftToRightarrow {
+        0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(-20px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }   
+}
+
+.arrowContact span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #131f44;
+  margin: 3px 0;
+  transition: 0.15s ease; 
+}
+
+.arrowContact span:nth-child(1) {
+    width: 40%;
+    transform: rotate(-45deg);
+}
+
+.arrowContact span:nth-child(3) {
+    width: 40%;
+    transform: rotate(45deg);
+}
+
+.arrowContactContainer {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.arrowContactContainer p {
+    margin-left: 16px;
+    cursor: pointer;
+}
+
+.arrowUp {
+    width: 35px;
+    height: 22px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    
+    animation: downToUparrow 7s linear infinite;
+}
+
+@keyframes downToUparrow {
+        0%{
+            transform: translateX(-5px);
+        }
+        25%{
+            transform: translateX(0px);
+        }
+        50%{
+           transform: translateX(5px);
+        }
+        75%{
+            transform: translateX(0px);
+        }
+        100%{
+            transform: translateX(-5px);
+        }   
+}
+
+.arrowUp span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #131f44;
+    margin: 3px 0;
+    transition: 0.15s ease; 
+}
+
+.arrowUp span:nth-child(1) {
+    width: 40%;
+    transform: rotate(-45deg);
+}
+
+.arrowUp span:nth-child(3) {
+    width: 40%;
+    transform: rotate(45deg);
+}
+
+.containerLeftFooter {
+    display: flex;
+    flex-direction: column-reverse;
+    transform: rotate(90deg);
+    cursor: pointer;
+}
+
+.containerLeftFooter p {
+    transform: rotate(-90deg);
+    margin: 13px;
 }

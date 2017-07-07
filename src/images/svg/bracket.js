@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Bracket = () => ( 
+const BracketElement = () => ( 
   <svg
     xmlns="http://www.w3.org/2000/svg"
     version="1.1"
@@ -33,4 +33,4 @@ const Bracket = () => (
   </svg>
 )
 
-export default Bracket;
+export default BracketElement;
