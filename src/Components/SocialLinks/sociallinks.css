@@ -5,3 +5,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.socialLinksContainer img {
+    transition: 0.2s ease-in-out;
+}
+
+.socialLinksContainer img:hover {
+    transform: translateY(-3.5px)
+}

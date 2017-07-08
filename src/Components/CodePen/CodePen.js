@@ -39,7 +39,7 @@ class CodePen extends Component {
                         <ul>
                             {codePenInfo.map( (item, index) => {
                                 return (
-                                <li onClick={(e) =>this.changeCP(item)}>{item.name}</li>)
+                                <li key={index} onClick={(e) =>this.changeCP(item)}>{item.name}</li>)
                             })}
                         </ul>
                     </div>
@@ -47,8 +47,8 @@ class CodePen extends Component {
                 <div className="containerRightCp">
                     <iframe height='300' scrolling='no' title='3D FX with mousetracking (React)' 
                     src= {this.state.srcFrame}
-                    allowtransparency='false' 
-                    frameborder="0" 
+                    allowTransparency='false' 
+                    frameBorder="0" 
                     allowFullScreen='false' 
                     style={{width: '75%'}}>
                     See the Pen <a href={this.state.hrefFrame}>3D FX with mousetracking (React)</a> by Gambadeur25 (<a href='https://codepen.io/Gambadeur25'>@Gambadeur25</a>) on <a href='https://codepen.io'>CodePen</a>

@@ -60,11 +60,11 @@
     color: white;
     font-size: 70px;
     transform: translateZ(14px);
-    animation: rotateBrackets 1s ease-in-out;
-    animation-delay: 0.7s;
     margin-top: 0px;
-    font-family: 'Helvetica', sans-serif;
-    transform: translateZ(20px);
+    font-family: 'Helvetica', sans-serif; 
+    animation: rotateBrackets 1s ease-in-out;
+    animation-delay: 0.5s;
+    transform: translateZ(30px);
 }
 
 
@@ -108,38 +108,69 @@
 
 .designItems {
     position: absolute;
-    width: 90%;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
+}
+
+.designItems > * {
+     position: absolute;
+     opacity: 0.6;
+}
+
+.designItems img:nth-child(1){
+    top: 17%;
+    right: 24%;
     animation: updown linear 5s infinite;
 }
 
-.designItems div:nth-child(1){
-    position: absolute;
-    top: 100px;
-    left: 150px;
+.designItems img:nth-child(2){
+    bottom: 20%;
+    left: 16%;
+    animation: downup ease-in-out 9s infinite;
 }
 
-.designItems div:nth-child(2){
-    position: absolute;
-    top: 280px;
-    left: 80%;
-    animation-delay: 1s;
+.designItems img:nth-child(3){
+    top: 10%;
+    left: 9%;
+    animation: updown ease-in 5s infinite;
+}
+
+.designItems img:nth-child(4){
+    bottom: 20%;
+    right: 39%;
+    animation: downup ease-in 4.3s infinite;
+}
+
+.designItems img:nth-child(5){
+    bottom: 26%;
+    right: 10%;
+    animation: downup ease-in-out 4s infinite;
+    animation-delay: 2s;
+}
+
+
+.designItems img:nth-child(6){
+    top: 34%;
+    left: 36%;
+    animation: updown ease-out 3.8s infinite;
+    animation-delay: 1.3s;
 }
 
 @keyframes updown {
-    0%{
-        top: 100px;
+    0%, 100% {
+        margin-top: -7px;
     }
-    25%{
-        top: 120px;
+    50% {
+        margin-top: 7px;
     }
-    50%{
-        top: 140px;
+}
+
+@keyframes downup {
+    0%, 100% {
+        margin-bottom: -8px;
     }
-    75%{
-        top: 120px;
-    }
-    100%{
-        top: 100px;
+    50% {
+        margin-bottom: 8px;
     }
 }

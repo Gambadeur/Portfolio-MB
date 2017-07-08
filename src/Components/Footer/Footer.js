@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import reactLogo from './../../images/react.svg';
 import './footer.css';
+import ScrollToTop from 'react-scroll-up';
 
 class Footer extends Component {
 
@@ -34,13 +35,16 @@ class Footer extends Component {
         </div>
         <div className="gridFooter">
             <div className="containerLeftFooter">
+              <ScrollToTop showUnder={160} duration={500}>
               <div className="arrowUp">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
               <p>UP</p>
+              </ScrollToTop>
             </div>
+
         </div>
       </div>
     );

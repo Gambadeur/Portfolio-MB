@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './menu.css';
+import crochet from './../../images/svg/crochet.svg'
 // import { CSSTransitionGroup } from 'react-transition-group' 
 
 class Menu extends Component {
@@ -10,16 +11,19 @@ class Menu extends Component {
     return (
 
       <div className="menuContainer" style={{display:this.props.isMenuActive ? 'block' : 'none'}}>
+        <div>youhouhfds</div>
         <div className="menuItemContainer">
             <ul>
-                <li><a onClick={(e) => this.props.menuClosed(false)} href="/#Home">Accueil</a></li>
-                <li><a onClick={(e) => this.props.menuClosed(false)} href="/#Skills">Compétences</a></li>
-                <li><a onClick={(e) => this.props.menuClosed(false)} href="/#CodePen">CodePen</a></li>
-                <li><a onClick={(e) => this.props.menuClosed(false)} href="/#Form">Contact</a></li>
+                <li><a onClick={(e) => this.props.menuClosed(false)} href="#home">Accueil</a></li>
+                <li><a onClick={(e) => this.props.menuClosed(false)} href="#skills">Compétences</a></li>
+                <li><a onClick={(e) => this.props.menuClosed(false)} href="#codepen">CodePen</a></li>
+                <li><a onClick={(e) => this.props.menuClosed(false)} href="#contact">Contact</a></li>
             </ul>
-            <div className="contactme">CONTACT ME</div>
         </div>
+        
         <div className="animMenuContainer">
+          <img src={crochet} alt=""/>
+          <p>youhou</p>
         </div>
       </div>
     );

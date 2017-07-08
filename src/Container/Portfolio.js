@@ -5,9 +5,10 @@ import Codepen from './../Components/CodePen/CodePen';
 import Contact from './../Components/Contact/Contact';
 import WrapperExt from './../Components/WrapperExt/WrapperExt';
 import Footer from './../Components/Footer/Footer';
-import './portfolio.css';
-// import {SectionsContainer, Section, ScrollToTopOnMount } from 'react-fullpage';
 import BurgerMenu from './../Components/Menu/BurgerMenu';
+
+import ScrollableAnchor from 'react-scrollable-anchor';
+import './portfolio.css';
 
 class Portfolio extends Component {
   constructor(props){
@@ -15,19 +16,21 @@ class Portfolio extends Component {
     this.state = {
 
     }
+    this.handleScroll = this.handleScroll.bind(this);
   }
 
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll(event){
+    let scrollTop = event.target.body.scrollTop;
+    if (scrollTop > 100){
+console.log("100 passé")
+    }
+  }
 
   render() {
-    // let options = {
-    //   sectionClassName:     'section',
-    //   anchors:              ['Home', 'Skills', 'CodePen', 'Form'],
-    //   navigation:           false,
-    //   verticalAlign:        false,
-    //   sectionPaddingTop:    '0px',
-    //   sectionPaddingBottom: '0px',
-    //   arrowNavigation:      true
-    // };
 
     return (
         <div className="mainContainer">
@@ -36,22 +39,20 @@ class Portfolio extends Component {
             </div>
             <WrapperExt />
             <BurgerMenu />
-           
             <div className="portfolioContainer">
-              {/*<ScrollToTopOnMount />*/}
-              {/*<SectionsContainer {...options}>
-                <Section>*/}
-                  <Home />
-          
-                  <Skills />
-
-                  <Codepen />
-
-                  <Contact />
-
-                  <Footer />
-                {/*</Section>
-              </SectionsContainer>*/}
+                  <ScrollableAnchor id={'home'} >
+                    <Home />
+                  </ScrollableAnchor>
+                  <ScrollableAnchor id={'skills'} >
+                    <Skills />
+                  </ScrollableAnchor>
+                  <ScrollableAnchor id={'codepen'} >
+                    <Codepen />
+                  </ScrollableAnchor>
+                  <ScrollableAnchor id={'contact'} >
+                    <Contact />
+                  </ScrollableAnchor>
+              <Footer />
             </div>
       </div>
     );

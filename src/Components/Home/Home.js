@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import Arrow from './../DesignIcon/Arrow';
 import './home.css';
-// import BracketElement from './../../images/svg/bracket';
-// import CrochetElement from './../../images/svg/crochet';
-// import FildroitElement from './../../images/svg/fildroitok';
+import crochetblanc from './../../images/png/crochetblanc.png';
+import crochetbleu from './../../images/png/crochetbleu.png';
+import dollarbleu from './../../images/png/dollarbleu.png';
+import egalblanc from './../../images/png/egalblanc.png';
+import gdcrochetblanc from './../../images/png/gdcrochetblanc.png';
+import pointvirgulebleu from './../../images/png/pointvirgulebleu.png';
 
 class Home extends Component {
     constructor(props){
@@ -47,10 +50,13 @@ class Home extends Component {
 
     return (
       <div className="homeContainer">
-        <div className="designItems" style={mouseAction} >
-          {/*<div><BracketElement /></div>
-          <div><CrochetElement /></div>
-          <div><FildroitElement /></div>*/}
+        <div className="designItems">
+          <img src={crochetblanc} alt=""/>
+          <img src={crochetbleu} alt=""/>
+          <img src={dollarbleu} alt=""/>
+          <img src={egalblanc} alt=""/>
+          <img src={gdcrochetblanc} alt=""/>
+          <img src={pointvirgulebleu} alt=""/>
         </div>
         
           

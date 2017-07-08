@@ -16,7 +16,8 @@ class BurgerMenu extends Component {
     burgerClick() {
         this.setState(prevState => ({
             isBurgerActive : !prevState.isBurgerActive,
-            isMenuActive : !prevState.isMenuActive
+            isMenuActive : !prevState.isMenuActive,
+
         }));
     }
     

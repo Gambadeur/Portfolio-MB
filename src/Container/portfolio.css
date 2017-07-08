@@ -8,13 +8,6 @@ p, h1, h2, h3, h4, h5, h6, ul, li, input, button {
     margin: 0;
 }
 
-/**,
-*::before,
-*::after {
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-}*/
 
 .portfolioContainer {
     font-family: 'Lato', sans-serif;
@@ -41,11 +34,6 @@ p, h1, h2, h3, h4, h5, h6, ul, li, input, button {
     animation: introLogo 0.8s ease;
     height: 0px;
     width: 0px;
-    /*top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;*/
     z-index: 40;
 }
 
