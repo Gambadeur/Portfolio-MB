@@ -35,7 +35,11 @@ class Footer extends Component {
         </div>
         <div className="gridFooter">
             <div className="containerLeftFooter">
-              <ScrollToTop showUnder={160} duration={500}>
+              <ScrollToTop 
+              showUnder={160} 
+              duration={500}
+              style={{position: 'relative', bottom: 'inherit', right:'inherit'}}
+              >
               <div className="arrowUp">
                 <span></span>
                 <span></span>
