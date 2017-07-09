@@ -16,19 +16,13 @@ class Portfolio extends Component {
     this.state = {
 
     }
-    this.handleScroll = this.handleScroll.bind(this);
   }
 
   componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
   }
 
-  handleScroll(event){
-    let scrollTop = event.target.body.scrollTop;
-    if (scrollTop > 100){
-console.log("100 passé")
-    }
-  }
+  
+
 
   render() {
 

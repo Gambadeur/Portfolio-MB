@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { Motion, spring, presets } from 'react-motion';
 import './burgermenu.css';
 import Menu from './Menu';
 
@@ -44,7 +45,21 @@ class BurgerMenu extends Component {
                     <span></span>
                 </div>
             </div>
+            {/*<Motion
+
+            defaultStyle={{
+            x: spring(-100),
+            opacity: spring(0)
+            }}
+            style={{
+                x: spring(this.state.isMenuActive ? 0 : -100),
+                opacity: spring(this.state.isMenuActive ? 1 : 0)
+            }}
+            >
+            {(x, opacity) => */}
             <Menu isMenuActive={this.state.isMenuActive} menuClosed={this.menuClosed}/>
+            }
+            {/*</Motion>*/}
         </div>
     );
   }

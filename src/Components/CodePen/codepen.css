@@ -28,10 +28,15 @@
     width: 100%;
     font-size: 40px;
     display: flex;
+    margin-left: 15%;
+}
+
+.itemsCp ul {
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-left: 20px;
+    align-items: left;
+    width: 100%;
 }
 
 .itemsCp ul li {

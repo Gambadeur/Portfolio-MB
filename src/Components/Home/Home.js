@@ -30,12 +30,13 @@ class Home extends Component {
 
       x = x + (-followX - x) * (1/30);
       y = y + (-followY - y) * (1/30);
-      
 
-  this.setState({
-      offsetX: x,
-      offsetY: y
-  }) 
+      // window.scrollTo(400, 500)
+
+      this.setState({
+          offsetX: x,
+          offsetY: y
+      }) 
 }
 
 
