@@ -5,7 +5,7 @@
     top: 40px;
     bottom: 40px;
     left: 80px;
-    z-index: 20;
+    z-index: 200;
     width: 85%;
     background-color: rgb(245, 248, 130);
     animation: elasticMenu 0.3s ease-out;
@@ -83,11 +83,11 @@
 }
 
 .animMenuContainer img{
-    margin-top: 100px;
+    margin-left: 10%;;
 }
 
 
-.path6166 {
+/*.path6166 {
   stroke-dasharray: 100;
   stroke-dashoffset: 100;
   animation: dash 5s linear forwards;
@@ -97,11 +97,15 @@
   to {
     stroke-dashoffset: 0;
   }
-}
+}*/
 
-.svgtest1 {
+.HomeItemsAnim, .SkillsItemsAnim, .CpItemsAnim  {
     opacity: 1;
     animation: opacityenter 0.8s ease;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
 }
 
 @keyframes opacityenter {
@@ -114,6 +118,47 @@
         transform: translateX(0px)
     }
 }
+
+
+.circleMenuHome {
+    color: white;
+    background-color: rgb(245, 248, 130);
+    height:300px;
+    width:300px;
+    border-radius: 300px;
+    border: solid white 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bracketsMenuHome {
+    color: white;
+    font-size: 170px;
+    margin-top: 0px;
+    font-family: 'Helvetica', sans-serif; 
+    animation: rotateBracketsMenuHome 1.4s ease-in-out;
+}
+
+@keyframes rotateBracketsMenuHome {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+.SkillsItemsAnim img {
+    height: 300px;
+   
+}
+
+.CpItemsAnim img {
+    height: 300px;
+    color: white;
+}
+
 
 /*
 .menuAnim-appear{

@@ -59,23 +59,21 @@ class Home extends Component {
           <img src={gdcrochetblanc} alt=""/>
           <img src={pointvirgulebleu} alt=""/>
         </div>
-        
-          
-          <div className="leftHome"></div>
-          <div className="rightHome"></div>
-          <div className="logoContainer">
-            <div className="logoCenter" style={mouseAction} >
-              <div className="bracketsHome"> {"{"} {" }"}</div>
-            </div>
-            <div className="titleHome">
+        <div className="leftHome"></div>
+        <div className="rightHome"></div>
+        <div className="logoContainer">
+          <div className="logoCenter" style={mouseAction} >
+            <div className="bracketsHome"> {"{"} {" }"}</div>
+          </div>
+          <div className="titleHome">
             <p>MATHIEU BLARDONE<br />
             <span>artisan codeur</span>
             </p>
           </div>
-          </div>
-          <div className="arrowNav">
+        </div>
+        <div className="arrowNav">
           <Arrow />
-          </div>    
+        </div>    
       </div>
     );
   }
