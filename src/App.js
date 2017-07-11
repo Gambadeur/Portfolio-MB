@@ -12,19 +12,34 @@ class App extends Component {
   }
 
 componentDidMount(){
-  setTimeout(() => {
-    this.setState({
-      isLoading: false
-    })
-  }, 1000);
+  console.log(this.portfolio);
+  // this.portfolio.addEventListener("load", this.loadPortfolio);
 }
+  // setTimeout(() => {
+  //   this.setState({
+  //     isLoading: false
+  //   })
+  // }, 1000);
+
+
+  loadPortfolio = () => {
+    console.log('lksdfkljs')
+    this.setState({
+      isLoading: false,
+    })
+  }
 
 
   render() {
     return (
-      
-        this.state.isLoading ? <Loader /> :
-        <Portfolio />
+
+      <div>
+        {this.state.isLoading && <Loader />} 
+        <div onLoad={this.loadPortfolio}>
+             <Portfolio />
+        </div>
+     
+      </div>
     );
   }
 }

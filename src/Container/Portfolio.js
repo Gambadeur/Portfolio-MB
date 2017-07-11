@@ -16,12 +16,7 @@ class Portfolio extends Component {
     this.state = {
 
     }
-  }
-
-  componentDidMount() {
-  }
-
-  
+  }  
 
 
   render() {
