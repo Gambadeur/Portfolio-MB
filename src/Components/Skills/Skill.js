@@ -28,11 +28,22 @@ isCardOff() {
   render() {
     return (
         <div className="skillCardRelative">
-            <div className={"skillCardAbsolute skillCard"+this.props.idCard} onMouseOver={this.isCardActive} onMouseOut={this.isCardOff}>
-              <div className={"skillCardInfo skillInfo"+this.props.idCard}>
-                <h3 className="titleCard" style={{display: this.state.handleCard ? 'none' : 'block'}}>{this.props.titleCard}</h3>
-                {this.state.handleCard ? this.props.children : null}
+            <div 
+            className={"skillCardAbsolute skillCard"+this.props.idCard} 
+            onMouseEnter={this.isCardActive} 
+            onMouseLeave={this.isCardOff}
+            style={{backgroundColor: this.state.handleCard ? this.props.colorCard : 'rgb(255, 255, 255, 0.6)',
+            borderColor: this.props.colorCard,
+            /*width: this.state.handleCard ? "105%" : this.props.widthCard+"%",
+            height: this.state.handleCard ? "180%" : this.props.heightCard+"%",*/
+            }}
+            >
+              <div 
+              className={"skillCardInfo skillInfo"+this.props.idCard} 
+              style={{display: this.state.handleCard ? 'none' : 'block'}}>
+                  <h3 className="titleCard" >{this.props.titleCard}</h3>   
               </div>
+              {this.state.handleCard ? this.props.children : null}
             </div>
         </div>
     );

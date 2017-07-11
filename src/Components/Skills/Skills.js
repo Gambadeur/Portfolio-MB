@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import Skill from './Skill';
 import './skills.css';
+import keyframesImg from './../../images/png/keyframes.png';
+import svgImg from './../../images/png/svg.png';
+import uiImg from './../../images/png/ui.png';
+import uxImg from './../../images/png/ux.png';
 
 class Skills extends Component {
   constructor(props){
@@ -16,100 +20,58 @@ class Skills extends Component {
   render() {
     return (
       <div className="skillsFlexContainer">
-      <div className="skillsContainer">
-        <Skill idCard="1" titleCard="Animation">
-          <div>hello</div>
-        </Skill>
-        <Skill idCard="2" titleCard="Créativité!">
-          <div>hello</div>
-        </Skill>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard3">
-              <div className="skillCardInfo skillInfo3">
-                  <h3>JavaScript</h3>
-              </div>
+        <div className="skillsContainer">
+          <Skill idCard="1" titleCard="Animation" colorCard="rgb(90, 198, 213)" widthCard="100" heightCard="175">
+            <div className="skillDetailContainer skillDetail1">
+              <img src={keyframesImg} alt=""/>
+              <img src={svgImg} alt=""/>
+              <img src={uiImg} alt=""/>
+              <img src={uxImg} alt=""/>
             </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard4">
-              <div className="skillCardInfo skillInfo4">
-                <h3>Adaptabilité</h3>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard5">
-              <div className="skillCardInfo skillInfo5">
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard6">
-              <div className="skillCardInfo skillInfo6">
-                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam quasi molestiae neque illum quo volup.</p>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard7">
-              <div className="skillCardInfo skillInfo7">
-                
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard8">
-              <div className="skillCardInfo skillInfo8">
-               <h3>React.Js</h3>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard9">
-              <div className="skillCardInfo skillInfo9">
-                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam quasi molestiae neque illum quo volup.</p>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute">
-              <div className="skillCardInfo">
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard11"> 
-              <div className="skillCardInfo skillInfo11">
-                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam quasi molestiae neque illum quo volup.</p>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute skillCard12">
-              <div className="skillCardInfo skillInfo12">
-                 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quam quasi molestiae neque illum quo volup.</p>
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute">
-              <div className="skillCardInfo">
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute">
-              <div className="skillCardInfo">
-              </div>
-            </div>
-          </div>
-          <div className="skillCardRelative">
-            <div className="skillCardAbsolute">
-              <div className="skillCardInfo">
-              </div>
-            </div>
-          </div>
-      </div>
+          </Skill>
+          <Skill idCard="2" titleCard="Créativité!" colorCard="rgb(245, 248, 130)" widthCard="230" heightCard="70">
+            
+          </Skill>
+          <Skill idCard="3" titleCard="JavaScript" colorCard="rgb(90, 198, 213)">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="4" titleCard="Adaptabilité" colorCard="#EA2E49">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="5" titleCard="">
+            <div></div>
+          </Skill>
+          <Skill idCard="6" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="7" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="8" titleCard="React.Js" colorCard="rgb(90, 198, 213)">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="9" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="10" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="11" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="12" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="13" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="14" titleCard="">
+            <div>hello</div>
+          </Skill>
+          <Skill idCard="15" titleCard="">
+            <div>hello</div>
+          </Skill>
+        </div>
       </div>
     );
   }
