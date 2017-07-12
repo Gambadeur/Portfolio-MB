@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Arrow from './../DesignIcon/Arrow';
 import './home.css';
-import crochetblanc from './../../images/png/crochetblanc.png';
 import crochetbleu from './../../images/png/crochetbleu.png';
 import dollarbleu from './../../images/png/dollarbleu.png';
-import egalblanc from './../../images/png/egalblanc.png';
-import gdcrochetblanc from './../../images/png/gdcrochetblanc.png';
-import pointvirgulebleu from './../../images/png/pointvirgulebleu.png';
+import crochetblancblanc from './../../images/png/crochetblancblanc.png';
+import pourcentage from './../../images/png/pourcentage.png';
+import diesebleu from './../../images/png/diesebleu.png';
+import arobase from './../../images/png/arobase.png';
 
 class Home extends Component {
     constructor(props){
@@ -52,12 +52,12 @@ class Home extends Component {
     return (
       <div className="homeContainer">
         <div className="designItems">
-          <img src={crochetblanc} alt=""/>
+          <img src={crochetblancblanc} alt=""/>
           <img src={crochetbleu} alt=""/>
           <img src={dollarbleu} alt=""/>
-          <img src={egalblanc} alt=""/>
-          <img src={gdcrochetblanc} alt=""/>
-          <img src={pointvirgulebleu} alt=""/>
+          <img src={arobase} alt=""/>
+          <img src={pourcentage} alt=""/>
+          <img src={diesebleu} alt=""/>
         </div>
         <div className="leftHome"></div>
         <div className="rightHome"></div>

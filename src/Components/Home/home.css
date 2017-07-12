@@ -7,7 +7,7 @@
 }
 
 .leftHome {
-    background-color:#F8F8F8;;
+    background-color:#F8F8F8;
     width: 50%;
 }
 
@@ -115,13 +115,15 @@
 
 .designItems > * {
      position: absolute;
-     opacity: 0.6;
+     /* opacity: 0.6; */
 }
 
 .designItems img:nth-child(1){
     top: 17%;
     right: 24%;
     animation: updown linear 5s infinite;
+    opacity: 0.6;
+    transform: rotate(180deg)
 }
 
 .designItems img:nth-child(2){
@@ -138,21 +140,23 @@
 
 .designItems img:nth-child(4){
     bottom: 20%;
-    right: 39%;
+    right: 33%;
     animation: downup ease-in 4.3s infinite;
+    opacity: 0.5;
 }
 
 .designItems img:nth-child(5){
-    bottom: 26%;
-    right: 10%;
+    bottom: 29%;
+    right: 8%;
     animation: downup ease-in-out 4s infinite;
     animation-delay: 2s;
+    opacity: 0.7;
 }
 
 
 .designItems img:nth-child(6){
     top: 34%;
-    left: 36%;
+    left: 34%;
     animation: updown ease-out 3.8s infinite;
     animation-delay: 1.3s;
 }

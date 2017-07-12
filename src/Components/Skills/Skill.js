@@ -34,8 +34,8 @@ isCardOff() {
             onMouseLeave={this.isCardOff}
             style={{backgroundColor: this.state.handleCard ? this.props.colorCard : 'rgb(255, 255, 255, 0.6)',
             borderColor: this.props.colorCard,
-            /*width: this.state.handleCard ? "105%" : this.props.widthCard+"%",
-            height: this.state.handleCard ? "180%" : this.props.heightCard+"%",*/
+            width: this.state.handleCard ? Number(this.props.widthCard)+5+"%" : this.props.widthCard+"%",
+            height: this.state.handleCard ? Number(this.props.heightCard)+5+"%" : this.props.heightCard+"%"
             }}
             >
               <div 
