@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import './menu.css';
-import origamiSvg from './../../images/svg/origami.svg'
-import codepenSvg from './../../images/png/codepen.png'
+import origamiSvg from './../../images/svg/origami.svg';
+import codepenSvg from './../../images/png/codepen.png';
+import MonFilm2 from './../../images/video/Monfilm2.mp4';
+import crochetblancblancImg from './../../images/png/crochetblancblanc.png';
 // import { CSSTransitionGroup } from 'react-transition-group' 
 
 class Menu extends Component {
@@ -10,7 +12,9 @@ class Menu extends Component {
     this.state = {
         displayIconHome : 'none',
         displayIconSkills : 'none',
-        displayIconCp: 'none'
+        displayIconCp: 'none',
+        displayIconContact: 'none',
+        displayIconAbout: 'none'
     }
     this.mouseoverSvg = this.mouseoverSvg.bind(this)
     this.mouseoutSvg = this.mouseoutSvg.bind(this)
@@ -42,7 +46,8 @@ mouseoutSvg() {
             <li><a onMouseOver={this.mouseoverSvg} onMouseOut={this.mouseoutSvg} onClick={(e) => this.props.menuClosed(false)} href="#home">Accueil</a></li>
             <li><a onMouseOver={()=> this.setState({displayIconSkills : 'block'})} onMouseOut={()=> this.setState({displayIconSkills : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#skills">Compétences</a></li>
             <li><a onMouseOver={()=> this.setState({displayIconCp : 'block'})} onMouseOut={()=> this.setState({displayIconCp : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#codepen">CodePen</a></li>
-            <li><a onClick={(e) => this.props.menuClosed(false)} href="#contact">Contact</a></li>
+            <li><a onMouseOver={()=> this.setState({displayIconAbout : 'block'})} onMouseOut={()=> this.setState({displayIconAbout : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#about">Qui suis-je?</a></li>
+            <li><a onMouseOver={()=> this.setState({displayIconContact : 'block'})} onMouseOut={()=> this.setState({displayIconContact : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#contact">Contact</a></li>
           </ul>
         </div>
         
@@ -57,6 +62,13 @@ mouseoutSvg() {
             </div>
             <div className="CpItemsAnim" style={{display: this.state.displayIconCp}}>
               <img src={codepenSvg} alt=""/>
+            </div>
+            <div className="AboutItemsAnim" style={{display: this.state.displayIconAbout}}>
+              <img src={crochetblancblancImg} alt=""/>
+              <img src={crochetblancblancImg} alt=""/>
+            </div>
+            <div className="ContactAnim" style={{display: this.state.displayIconContact}}>
+              <video autoPlay muted loop src={MonFilm2}></video>
             </div>
         </div>
         </div>

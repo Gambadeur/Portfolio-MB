@@ -15,7 +15,7 @@ render() {
             </div>
          <div className="contactContainerRight"> 
               <video className="videoFooter" autoPlay muted loop src={MonFilm2}></video>
-              <div className="textVideo">Connectez-moi</div>
+              <div className="textVideo">Connectez-Moi</div>
         </div>
         </div>
         );

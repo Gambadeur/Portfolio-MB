@@ -83,7 +83,7 @@
 }
 
 .animMenuContainer img{
-    margin-left: 10%;;
+    margin-left: 10%;
 }
 
 
@@ -99,7 +99,7 @@
   }
 }*/
 
-.HomeItemsAnim, .SkillsItemsAnim, .CpItemsAnim  {
+.HomeItemsAnim, .SkillsItemsAnim, .CpItemsAnim, .ContactAnim, .AboutItemsAnim  {
     opacity: 1;
     animation: opacityenter 0.8s ease;
     display: flex;
@@ -182,3 +182,18 @@
     width: 0%;
     transition: width 500ms ease-in;
 }*/
+
+.ContactAnim {
+    width: 40%;
+    height: 30%;
+    margin-left: -300px;
+}
+
+.ContactAnim video {
+     width: 250px;
+    height: 170px;
+}
+
+.AboutItemsAnim img {
+    height: 270px;
+}

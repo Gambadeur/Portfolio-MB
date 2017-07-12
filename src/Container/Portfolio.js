@@ -6,6 +6,7 @@ import Contact from './../Components/Contact/Contact';
 import WrapperExt from './../Components/WrapperExt/WrapperExt';
 import Footer from './../Components/Footer/Footer';
 import BurgerMenu from './../Components/Menu/BurgerMenu';
+import About from './../Components/About/About.js';
 
 import ScrollableAnchor from 'react-scrollable-anchor';
 import './portfolio.css';
@@ -37,6 +38,9 @@ class Portfolio extends Component {
                   </ScrollableAnchor>
                   <ScrollableAnchor id={'codepen'} >
                     <Codepen />
+                  </ScrollableAnchor>
+                  <ScrollableAnchor id={'about'} >
+                    <About />
                   </ScrollableAnchor>
                   <ScrollableAnchor id={'contact'} >
                     <Contact />

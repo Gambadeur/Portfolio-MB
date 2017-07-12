@@ -1,0 +1,72 @@
+.aboutContainer {
+    width: 100%;
+    height: 100vh;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+.aboutPart1 {
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 15%;
+    left: 10%;
+    width: 500px;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: justify;
+}
+
+/* .aboutPart1::before {
+    position: absolute;
+    content: "<";
+    font-size: 100px;
+    left: -70px;
+    top: -80px;
+}
+
+.aboutPart1::after {
+    position: absolute;
+    content: ">";
+    font-size: 100px;
+    right: -70px;
+    bottom: -80px;
+} */
+
+.fleche1About {
+    position: absolute;
+    right: 18%;
+    top: 10%;
+    width: 340px;
+}
+
+.aboutPart2 {
+    position: absolute;
+    transform: rotate(8deg);
+    top: 50%;
+    right: 5%;
+    width: 500px;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: justify;
+}
+
+
+
+.aboutPart3 {
+    position: absolute;
+    transform: rotate(4deg);
+    bottom: 5%;
+    left: 5%;
+    width: 500px;
+    font-size: 20px;
+    font-variant: small-caps;
+    text-align: justify;
+}
+
+.fleche2About {
+    position: absolute;
+    right: 30%;
+    bottom: 10%;
+    width: 250px;
+}
+

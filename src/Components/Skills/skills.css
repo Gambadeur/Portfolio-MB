@@ -94,12 +94,12 @@
 .skillDetail1 img:nth-child(2) {
     width: 20%;
     transform: rotate(20deg);
-    top: 60%;
-    left: 50%;
+    top: 84%;
+    left: 36%;
 }
 
 .skillDetail1 img:nth-child(3) {
-    width: 25%;
+    width: 18%;
     transform: rotate(20deg);
     top: 30%;
     left: 15%;
@@ -108,15 +108,16 @@
 .skillDetail1 img:nth-child(4) {
     width: 17%;
     transform: rotate(20deg);
-    top: 30%;
+    top: 60%;
     right: 10%;
 }
 
 .skillDetail1 img:nth-child(5) {
-    width: 5%;
+    width: 8%;
     transform: rotate(20deg);
-    top: 80%;
-    right: 50%;
+    top: 40%;
+    right: 30%;
+    opacity: 0.7;
 }
 
 /*//////////////////CARD2//////////////////*/
@@ -146,6 +147,22 @@
     transform: rotate(-3deg);
     bottom: 17%;
     right: 10%;
+}
+
+.skillDetail2 img:nth-child(3) {
+    width: 20%;
+    opacity: 1;
+    transform: rotate(-3deg);
+    bottom: 11%;
+    left: 6%;
+}
+
+.skillDetail2 img:nth-child(4) {
+    width: 24%;
+    opacity: 1;
+    transform: rotate(-3deg);
+    bottom: 40%;
+    right: 35%;
 }
 
 /*//////////////////CARD3//////////////////*/
@@ -179,6 +196,12 @@
     right: 18%;
 }
 
+.skillDetail3 img:nth-child(4) {
+    width: 4%;
+    top: 8%;
+    left: 13%;
+}
+
 /*//////////////////CARD4//////////////////*/
 
 .skillCard4 {
@@ -190,6 +213,34 @@
 
 .skillInfo4 {
     transform: rotate(49deg);
+}
+
+.skillDetail4 img {
+    transform: rotate(49deg);
+}
+
+.skillDetail4 img:nth-child(1) {
+    width: 60%;
+    top: 43%;
+    left: 45%;
+}
+
+.skillDetail4 img:nth-child(2) {
+    width: 42%;
+    bottom: 17%;
+    left: 15%;
+}
+
+.skillDetail4 img:nth-child(3) {
+    width: 3%;
+    top: 10%;
+    right: 18%;
+}
+
+.skillDetail4 img:nth-child(4) {
+    width: 5%;
+    top: 30%;
+    left: 20%;
 }
 
 /*//////////////////CARD5//////////////////*/
@@ -220,6 +271,29 @@
     z-index: 16;
 }
 
+.skillDetail6 img:nth-child(1) {
+    width: 37%;
+    top: 30%;
+    left: 30%;
+}
+
+.skillDetail6 img:nth-child(2) {
+    width: 28%;
+    bottom: 20%;
+    left: 15%;
+}
+
+.skillDetail6 img:nth-child(3) {
+    width: 32%;
+    top: 10%;
+    right: 18%;
+}
+.skillDetail6 img:nth-child(4) {
+    width: 18%;
+    top: 60%;
+    right: 10%;
+}
+
 /*//////////////////CARD7//////////////////*/
 
 .skillCard7 {
@@ -244,7 +318,7 @@
 
 .skillDetail8 img:nth-child(1) {
     width: 20%;
-    top: 30%;
+    top: 23%;
     left: 30%;
 }
 
@@ -252,17 +326,27 @@
     width: 22%;
     bottom: 20%;
     left: 15%;
+    animation: rotateReactSkill 7s linear;
+}
+
+@keyframes rotateReactSkill {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
 }
 
 .skillDetail8 img:nth-child(3) {
     width: 18%;
-    top: 10%;
-    right: 18%;
+    top: 45%;
+    right: 20%;
 }
 
 .skillDetail8 img:nth-child(4) {
     width: 20%;
-    top: 50%;
+    bottom: 18%;
     right: 20%;
 }
 
@@ -278,6 +362,28 @@
 
 .skillInfo9 {
     transform: rotate(-13deg); 
+}
+
+.skillDetail9 img {
+    transform: rotate(-13deg); 
+}
+
+.skillDetail9 img:nth-child(1) {
+    width: 36%;
+    top: 34%;
+    left: 46%;
+}
+
+.skillDetail9 img:nth-child(2) {
+    width: 22%;
+    bottom: 10%;
+    left: 25%;
+}
+
+.skillDetail9 img:nth-child(3) {
+    width: 18%;
+    top: 10%;
+    right: 18%;
 }
 
 /*//////////////////CARD10//////////////////*/
