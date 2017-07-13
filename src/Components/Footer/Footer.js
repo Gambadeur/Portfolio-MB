@@ -13,7 +13,7 @@ class Footer extends Component {
       <div className="footerContainer">
         <div className="gridFooter">
           <div className="arrowContactContainer">
-            <p>CONTACT</p>
+            <p>MENU</p>
             <div className="arrowContact">
               <span></span>
               <span></span>
