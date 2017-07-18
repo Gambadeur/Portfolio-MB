@@ -31,10 +31,8 @@ p, h1, h2, h3, h4, h5, h6, ul, li, input, button {
     background-color: black;
     overflow: hidden;
     border-radius: 50%;
-    animation: introLogo 0.8s ease;
-    height: 0px;
-    width: 0px;
-    z-index: 40;
+    animation: introLogo 0.35s linear;
+    z-index: 300;
 }
 
 @keyframes introLogo {

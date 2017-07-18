@@ -18,6 +18,10 @@
     border-style: none;
 }
 
+.licontainerCp {
+    width: 100%;
+}
+
 .containerLeftCp {
     width: 40%;
     background-color: rgb(90, 198, 213);

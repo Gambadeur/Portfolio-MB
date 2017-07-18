@@ -32,7 +32,7 @@ isCardOff() {
             className={"skillCardAbsolute skillCard"+this.props.idCard} 
             onMouseEnter={this.isCardActive} 
             onMouseLeave={this.isCardOff}
-            style={{backgroundColor: this.state.handleCard ? this.props.colorCard : 'rgb(255, 255, 255, 0.6)',
+            style={{backgroundColor: this.state.handleCard ? this.props.colorCard : 'rgba(255, 255, 255, 0.6)',
             borderColor: this.props.colorCard,
             width: this.state.handleCard ? Number(this.props.widthCard)+5+"%" : this.props.widthCard+"%",
             height: this.state.handleCard ? Number(this.props.heightCard)+5+"%" : this.props.heightCard+"%"

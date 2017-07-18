@@ -7,37 +7,40 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
-      isLoading: true,
+      isLoading: false,
     }
   }
 
 componentDidMount(){
-  console.log(this.portfolio);
-  // this.portfolio.addEventListener("load", this.loadPortfolio);
-}
-  // setTimeout(() => {
-  //   this.setState({
-  //     isLoading: false
-  //   })
-  // }, 1000);
-
-
-  loadPortfolio = () => {
-    console.log('lksdfkljs')
+  setTimeout(() => {
     this.setState({
-      isLoading: false,
+      isLoading: true
     })
-  }
+  }, 3000);
+
+
+}
+
+
+  // loadPortfolio = () => {
+  //   setTimeout(() => {
+  //       this.setState({
+  //     isLoading: false,
+  //   })
+  //   }, 2500);
+  // }
 
 
   render() {
     return (
 
       <div>
-        {this.state.isLoading && <Loader />} 
+
+         {this.state.isLoading ? <Portfolio /> : <Loader />} 
+         {/* {this.state.isLoading && <Loader />} 
         <div onLoad={this.loadPortfolio}>
              <Portfolio />
-        </div>
+        </div>  */}
      
       </div>
     );

@@ -32,15 +32,18 @@
     bottom: -80px;
 } */
 
-.fleche1About {
+.aboutContainer > * {
     position: absolute;
+}
+
+
+.fleche1About {
     right: 18%;
     top: 10%;
     width: 340px;
 }
 
 .aboutPart2 {
-    position: absolute;
     transform: rotate(8deg);
     top: 50%;
     right: 5%;
@@ -53,7 +56,6 @@
 
 
 .aboutPart3 {
-    position: absolute;
     transform: rotate(4deg);
     bottom: 5%;
     left: 5%;
@@ -64,7 +66,6 @@
 }
 
 .fleche2About {
-    position: absolute;
     right: 30%;
     bottom: 10%;
     width: 250px;

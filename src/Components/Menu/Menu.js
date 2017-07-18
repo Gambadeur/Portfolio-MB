@@ -16,25 +16,7 @@ class Menu extends Component {
         displayIconContact: 'none',
         displayIconAbout: 'none'
     }
-    this.mouseoverSvg = this.mouseoverSvg.bind(this)
-    this.mouseoutSvg = this.mouseoutSvg.bind(this)
   }
-  
-componentDidMount(){
-}
-
-mouseoverSvg() {
-  this.setState({
-    displayIconHome : 'block',
-    
-  })
-}
-
-mouseoutSvg() {
-  this.setState({
-    displayIconHome : 'none',
-  })
-}
 
   render() {
     return (
@@ -43,7 +25,7 @@ mouseoutSvg() {
         <div className="flexMenuContainer">
         <div className="menuItemContainer">
           <ul>
-            <li><a onMouseOver={this.mouseoverSvg} onMouseOut={this.mouseoutSvg} onClick={(e) => this.props.menuClosed(false)} href="#home">Accueil</a></li>
+            <li><a onMouseOver={()=> this.setState({displayIconHome : 'block'})} onMouseOut={()=> this.setState({displayIconHome : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#home">Accueil</a></li>
             <li><a onMouseOver={()=> this.setState({displayIconSkills : 'block'})} onMouseOut={()=> this.setState({displayIconSkills : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#skills">Compétences</a></li>
             <li><a onMouseOver={()=> this.setState({displayIconCp : 'block'})} onMouseOut={()=> this.setState({displayIconCp : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#codepen">CodePen</a></li>
             <li><a onMouseOver={()=> this.setState({displayIconAbout : 'block'})} onMouseOut={()=> this.setState({displayIconAbout : 'none'})} onClick={(e) => this.props.menuClosed(false)} href="#about">Qui suis-je?</a></li>

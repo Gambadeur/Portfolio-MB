@@ -9,7 +9,7 @@ import diesebleu from './../../images/png/diesebleu.png';
 import arobase from './../../images/png/arobase.png';
 
 class Home extends Component {
-    constructor(props){
+  constructor(props){
       super(props);
       this.state = {
           offsetX: "",
@@ -18,9 +18,10 @@ class Home extends Component {
       this.mouseMove = this.mouseMove.bind(this)
     }
 
-  componentDidMount(){
+  componentWillMount(){
         document.addEventListener('mousemove', this.mouseMove);
     }
+
   mouseMove(e){
 
       let followX = (window.innerWidth / 2 - e.clientX);

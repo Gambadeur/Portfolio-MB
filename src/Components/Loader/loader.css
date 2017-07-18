@@ -8,44 +8,42 @@
     justify-content: center;
     align-items: center;
     background-color: black;
-    margin: auto 0;
+    margin: auto;
 }
 
 .circle {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; 
+    align-items: center; */
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 40px;
     border: solid black 2px;
     background-color: white;
     color: black;
-    /*animation: colorChange 4s infinite;*/
+    
 }
 
-/*
-@keyframes colorChange {
-  0%     {  color: #ffffff; }
-  16.6%  {  color: #d86043; }
-  33.33% {  color: #f0951f; }
-  49.8%  {  color: #44b57d; }
-  66.4%  {  color: #3a9fd3; }
-  83%    {  color: #687480; }
-  100%   {  color: #ffffff; }
-}*/
 
 .brackets{
+    margin: auto;
     font-size: 20px;
     animation: rotateBrackets 1s ease-in-out infinite;
+    -webkit-animation: rotateBrackets 1s ease-in-out infinite;
     font-family: 'Helvetica', sans-serif;
 }
 
 @keyframes rotateBrackets {
     from {
-        transform: rotate(0deg)
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
     }
     to {
-        transform: rotate(360deg)
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
     }
 }

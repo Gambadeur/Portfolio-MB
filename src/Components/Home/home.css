@@ -27,34 +27,6 @@
     }
 }
 
-.logoContainer {
-    position: absolute;
-    top: 40px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: black;
-    margin-left: 0;
-    margin-right: 0;
-    
-}
-
-.logoCenter {
-    width: 170px;
-    height: 170px;
-    background-color: black;
-    border-radius: 170px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform-style: preserve-3d;
-}
-
-
 
 .bracketsHome {
     color: white;
@@ -76,6 +48,36 @@
         transform: rotate(360deg)
     }
 }
+
+.logoContainer {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
+.logoCenter {
+    transform-style: preserve-3d;
+    width: 170px;
+    height: 170px;
+    background-color: black;
+    border-radius: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
 
 .titleHome{
     margin-left: -5px;
@@ -115,6 +117,7 @@
 
 .designItems > * {
      position: absolute;
+     animation-delay: 5s;
      /* opacity: 0.6; */
 }
 

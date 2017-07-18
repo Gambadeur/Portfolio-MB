@@ -1,32 +1,40 @@
 .contactContainer {
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
-    padding-top: 100px;
     align-items: center;
+    justify-content: center;
+    background: #F8F8F8;
+    background: linear-gradient(to top, white, #F8F8F8);
+    background: -webkit-linear-gradient(left, white, #F8F8F8);
+    background: -moz-linear-gradient(left, white, #F8F8F8);
+    background: -o-linear-gradient(left, white, #F8F8F8);   
 }
 
-.contactContainerLeft {
-    width: 50%;
-    height: 100%;
-    padding-top: 100px;
+.contactContainerForm {
+    width: 45%;
+    /* height: 100%; */
 }
 
-.contactContainerRight {
-    width: 50%;
-    height: 100%;
+.contactContainerVideo {
+    width: 45%;
     position: relative;
+    cursor: pointer;
 }
 
-.contactContainerRight video {
+.contactContainerVideo video {
     width: 100%;
 }
 
 .textVideo {
     position: absolute;
-    top: 180px;
-    left: 30%;
+    top: 0; left: 0; right: 0; bottom: 0;
+    display: flex;
     color: white;
     font-size: 40px;
     font-variant: small-caps;
+}
+
+.textVideo h3 {
+    margin: auto;
 }

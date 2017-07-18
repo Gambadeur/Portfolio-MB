@@ -39,7 +39,10 @@ class CodePen extends Component {
                         <ul>
                             {codePenInfo.map( (item, index) => {
                                 return (
-                                <li key={index} onClick={(e) =>this.changeCP(item)}>{item.name}</li>)
+                                <div className="licontainerCp">
+                                <li key={index} onClick={(e) =>this.changeCP(item)}>{item.name}</li>
+                                </div>
+                                )
                             })}
                         </ul>
                     </div>

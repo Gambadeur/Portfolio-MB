@@ -12,14 +12,16 @@ class Footer extends Component {
 
       <div className="footerContainer">
         <div className="gridFooter">
+          
           <div className="arrowContactContainer">
-            <p>MENU</p>
-            <div className="arrowContact">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            
+            <a href="https://www.canva.com/design/DACKaWYTMaU/bh9tdg8PShxAPYQwTRD_Vg/view?utm_content=DACKaWYTMaU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
+              <p>Mon CV</p>
+              <div className="arrowContact">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>   
+            </a>
           </div>
         </div>
         <div className="gridFooter">
