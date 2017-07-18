@@ -7,6 +7,11 @@ import crochetblancblanc from './../../images/png/crochetblancblanc.png';
 import pourcentage from './../../images/png/pourcentage.png';
 import diesebleu from './../../images/png/diesebleu.png';
 import arobase from './../../images/png/arobase.png';
+import deuxpts from './../../images/png/2pts.png';
+import egalblanc from './../../images/png/egalblanc.png';
+import pointvirgulebleu from './../../images/png/ptvirgulebleu.png';
+import pointvirguleblanc from './../../images/png/ptvirguleblanc.png';
+import arobasebleu from './../../images/png/arobasebleu.png';
 
 class Home extends Component {
   constructor(props){
@@ -59,6 +64,12 @@ class Home extends Component {
           <img src={arobase} alt=""/>
           <img src={pourcentage} alt=""/>
           <img src={diesebleu} alt=""/>
+          <img src={deuxpts} alt=""/>
+          <img src={egalblanc} alt=""/>
+          <img src={pointvirgulebleu} alt=""/>
+          <img src={arobasebleu} alt=""/>
+          <img src={pointvirguleblanc} alt=""/>
+          <img src={crochetbleu} alt=""/>
         </div>
         <div className="leftHome"></div>
         <div className="rightHome"></div>

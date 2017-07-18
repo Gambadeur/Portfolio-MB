@@ -41,7 +41,8 @@ isCardOff() {
               <div 
               className={"skillCardInfo skillInfo"+this.props.idCard} 
               style={{display: this.state.handleCard ? 'none' : 'block'}}>
-                  <h3 className="titleCard" >{this.props.titleCard}</h3>   
+                  <img src={this.props.titleCard} alt=""/>
+                  <h3 className="titleCard" >{this.props.titleCard}</h3>
               </div>
               {this.state.handleCard ? this.props.children : null}
             </div>

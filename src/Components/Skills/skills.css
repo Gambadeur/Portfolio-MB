@@ -44,6 +44,10 @@
     
 }
 
+.skillCardInfo img {
+    height: 20px;
+}
+
 /*////SKILLDETAIL////*/
 
 .skillDetailContainer {

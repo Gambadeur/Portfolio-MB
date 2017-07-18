@@ -28,6 +28,7 @@ import reactLogo from './../../images/react.svg';
 import nodejsImg from './../../images/png/nodejs.png';
 import propsImg from './../../images/png/props.png';
 import stateImg from './../../images/png/state.png';
+import forcepropTitle from './../../images/png/force2.png';
 
 
 class Skills extends Component {
@@ -118,7 +119,7 @@ class Skills extends Component {
           </Skill>
           <Skill idCard="14" titleCard="HTML" colorCard="rgb(90, 198, 213)"  widthCard="180" heightCard="50">
           </Skill>
-          <Skill idCard="15" titleCard="Force de proposition" colorCard="rgb(245, 248, 130)"  widthCard="190" heightCard="80">
+          <Skill idCard="15" titleCard={forcepropTitle} colorCard="rgb(245, 248, 130)"  widthCard="190" heightCard="80">
           </Skill>
         </div>
       </div>

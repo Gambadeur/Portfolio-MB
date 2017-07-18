@@ -5,10 +5,10 @@
     align-items: center;
     justify-content: center;
     background: #F8F8F8;
-    background: linear-gradient(to top, white, #F8F8F8);
-    background: -webkit-linear-gradient(left, white, #F8F8F8);
-    background: -moz-linear-gradient(left, white, #F8F8F8);
-    background: -o-linear-gradient(left, white, #F8F8F8);   
+    background: linear-gradient(to bottom, white, #F8F8F8);
+    background: -webkit-linear-gradient(bottom, white, #F8F8F8);
+    background: -moz-linear-gradient(bottom, white, #F8F8F8);
+    background: -o-linear-gradient(bottom, white, #F8F8F8);   
 }
 
 .contactContainerForm {

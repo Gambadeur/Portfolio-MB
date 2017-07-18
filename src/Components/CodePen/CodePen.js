@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './codepen.css';
-
+import arobase from './../../images/png/arobase.png';
+import dieseblanc from './../../images/png/diese.png';
+import deuxpts from './../../images/png/2pts.png';
+import crochetblanc from './../../images/png/crochetblancblanc.png';
 
 class CodePen extends Component {
     constructor(){
@@ -48,6 +51,10 @@ class CodePen extends Component {
                     </div>
                 </div>
                 <div className="containerRightCp">
+                    <img src={arobase} alt=""/>
+                    <img src={dieseblanc} alt=""/>
+                    <img src={deuxpts} alt=""/>
+                    <img src={crochetblanc} alt=""/>
                     <iframe height='300' scrolling='no' title='3D FX with mousetracking (React)' 
                     src= {this.state.srcFrame}
                     allowTransparency='false' 
