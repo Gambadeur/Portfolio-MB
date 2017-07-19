@@ -45,7 +45,7 @@
 }
 
 .skillCardInfo img {
-    height: 20px;
+    height: 30px;
 }
 
 /*////SKILLDETAIL////*/
@@ -90,10 +90,10 @@
 }
 
 .skillDetail1 img:nth-child(1) {
-    width: 60%;
+    width: 43%;
     transform: rotate(20deg);
-    top: 8%;
-    left: 30%;
+    top: 40%;
+    left: 40%;
 }
 
 .skillDetail1 img:nth-child(2) {
@@ -104,24 +104,24 @@
 }
 
 .skillDetail1 img:nth-child(3) {
-    width: 18%;
+    width: 12%;
     transform: rotate(20deg);
-    top: 30%;
+    top: 10%;
     left: 15%;
 }
 
 .skillDetail1 img:nth-child(4) {
-    width: 17%;
+    width: 9%;
     transform: rotate(20deg);
-    top: 60%;
+    top: 10%;
     right: 10%;
 }
 
 .skillDetail1 img:nth-child(5) {
     width: 8%;
     transform: rotate(20deg);
-    top: 40%;
-    right: 30%;
+    top: 68%;
+    right: 20%;
     opacity: 0.7;
 }
 
@@ -139,35 +139,35 @@
 }
 
 .skillDetail2 img:nth-child(1) {
-    width: 6%;
+    width: 4%;
     opacity: 1;
     transform: rotate(-3deg);
-    top: 5%;
-    left: 20%;
+    bottom: 13%;
+    right: 20%;
 }
 
 .skillDetail2 img:nth-child(2) {
-    width: 10%;
+    width: 7%;
     opacity: 1;
     transform: rotate(-3deg);
-    bottom: 17%;
-    right: 10%;
+    bottom: 46%;
+    right: 50%;
 }
 
 .skillDetail2 img:nth-child(3) {
     width: 20%;
     opacity: 1;
-    transform: rotate(-3deg);
+    transform: rotate(3deg);
     bottom: 11%;
-    left: 6%;
+    left: 13%;
 }
 
 .skillDetail2 img:nth-child(4) {
-    width: 24%;
+    width: 16%;
     opacity: 1;
-    transform: rotate(-3deg);
-    bottom: 40%;
-    right: 35%;
+    transform: rotate(3deg);
+    top: 17%;
+    right: 20%;
 }
 
 /*//////////////////CARD3//////////////////*/
@@ -248,6 +248,12 @@
     left: 20%;
 }
 
+.skillDetail4 img:nth-child(5) {
+    width: 30%;
+    top: 37%;
+    left: 5%;
+}
+
 /*//////////////////CARD5//////////////////*/
 
 .skillCard5 {
@@ -297,6 +303,7 @@
     width: 18%;
     top: 60%;
     right: 10%;
+    opacity: 0.6;
 }
 
 /*//////////////////CARD7//////////////////*/
@@ -312,6 +319,20 @@
    transform: rotate(15deg); 
 }
 
+.skillDetail7 img:nth-child(1) {
+    width: 50%;
+    top: 23%;
+    left: 30%;
+    transform: rotate(15deg);
+}
+
+.skillDetail7 img:nth-child(2) {
+    width: 10%;
+    bottom: 13%;
+    left: 36%;
+    transform: rotate(105deg);
+}
+
 /*//////////////////CARD8//////////////////*/
 
 .skillCard8 {
@@ -319,6 +340,10 @@
     left: 30%;
     border-radius: 50%;
     z-index: 20;
+}
+
+.skillInfo8 img {
+    height: 48px;
 }
 
 .skillDetail8 img:nth-child(1) {
@@ -391,6 +416,13 @@
     right: 18%;
 }
 
+.skillDetail9 img:nth-child(4) {
+    width: 2%;
+    top: 10%;
+    left: 17%;
+}
+
+
 /*//////////////////CARD10//////////////////*/
 
 .skillCard10 {
@@ -398,6 +430,30 @@
     left: 115%;
     border-radius: 50%;
     z-index: 20;
+}
+
+.skillDetail10 img:nth-child(1) {
+    width: 24%;
+    top: 31%;
+    left: 10%;
+}
+
+.skillDetail10 img:nth-child(2) {
+    width: 20%;
+    bottom: 31%;
+    right: 10%;
+}
+
+.skillDetail10 img:nth-child(3) {
+    width: 24%;
+    top: 10%;
+    left: 38%;
+}
+
+.skillDetail10 img:nth-child(4) {
+    width: 12%;
+    bottom: 10%;
+    left: 30%;
 }
 
 /*//////////////////CARD11//////////////////*/
@@ -409,6 +465,33 @@
     z-index: 18;
 }
 
+.skillDetail11 img:nth-child(1) {
+    width: 24%;
+    top: 31%;
+    left: 10%;
+    transform: rotate(-5deg);
+}
+
+.skillDetail11 img:nth-child(2) {
+    width: 10%;
+    top: 70%;
+    left: 46%;
+    transform: rotate(-8deg);
+}
+
+.skillDetail11 img:nth-child(3) {
+    width: 18%;
+    top: 10%;
+    right: 10%;
+    transform: rotate(-13deg);
+}
+
+.skillDetail11 img:nth-child(4) {
+    width: 7%;
+    bottom: 24%;
+    right: 15%;
+    transform: rotate(-10deg);
+}
 
 /*//////////////////CARD12//////////////////*/
 
@@ -423,6 +506,27 @@
    transform: rotate(15deg); 
 }
 
+.skillDetail12 img:nth-child(1) {
+    width: 29%;
+    top: 11%;
+    right: 15%;
+    transform: rotate(15deg);
+}
+
+.skillDetail12 img:nth-child(2) {
+    width: 43%;
+    bottom: 38%;
+    left: 16%;
+    transform: rotate(15deg);
+}
+
+.skillDetail12 img:nth-child(3) {
+    width: 25%;
+    bottom: 6%;
+    right: 4%;
+    transform: rotate(15deg);
+}
+
 /*//////////////////CARD13//////////////////*/
 
 .skillCard13 {
@@ -430,6 +534,25 @@
     left: 26%;
     z-index: 15;
 }
+
+.skillDetail13 img:nth-child(1) {
+    width: 34%;
+    bottom: 17%;
+    right: 4%;
+}
+
+.skillDetail13 img:nth-child(2) {
+    width: 40%;
+    top: 17%;
+    left: 24%;
+}
+
+.skillDetail13 img:nth-child(3) {
+    width: 11%;
+    bottom: 17%;
+    left: 14%;
+}
+
 
 /*//////////////////CARD14//////////////////*/
 
@@ -441,6 +564,27 @@
 }
 
 .skillInfo14 {
+    transform: rotate(10deg);
+}
+
+.skillDetail14 img:nth-child(1) {
+    width: 28%;
+    bottom: 17%;
+    right: 4%;
+    transform: rotate(10deg);
+}
+
+.skillDetail14 img:nth-child(2) {
+    width: 21%;
+    bottom: 37%;
+    right: 46%;
+    transform: rotate(10deg);
+}
+
+.skillDetail14 img:nth-child(3) {
+    width: 18%;
+    bottom: 20%;
+    left: 4%;
     transform: rotate(10deg);
 }
 
@@ -457,3 +601,23 @@
     transform: rotate(-2deg);
 }
 
+.skillDetail15 img:nth-child(1) {
+    width: 28%;
+    bottom: 6%;
+    right: 4%;
+    transform: rotate(-2deg);
+}
+
+.skillDetail15 img:nth-child(2) {
+    width: 25%;
+    bottom: 25%;
+    left: 14%;
+    transform: rotate(-2deg);
+}
+
+.skillDetail15 img:nth-child(3) {
+    width: 1.3%;
+    bottom: 34%;
+    left: 45%;
+    transform: rotate(-2deg);
+}

@@ -3,7 +3,7 @@ import './menu.css';
 import origamiSvg from './../../images/svg/origami.svg';
 import codepenSvg from './../../images/png/codepen.png';
 import MonFilm2 from './../../images/video/Monfilm2.mp4';
-import crochetblancblancImg from './../../images/png/crochetblancblanc.png';
+import ptdinterroImg from './../../images/png/ptdinterro.png';
 // import { CSSTransitionGroup } from 'react-transition-group' 
 
 class Menu extends Component {
@@ -46,8 +46,7 @@ class Menu extends Component {
               <img src={codepenSvg} alt=""/>
             </div>
             <div className="AboutItemsAnim" style={{display: this.state.displayIconAbout}}>
-              <img src={crochetblancblancImg} alt=""/>
-              <img src={crochetblancblancImg} alt=""/>
+              <img src={ptdinterroImg} alt=""/>
             </div>
             <div className="ContactAnim" style={{display: this.state.displayIconContact}}>
               <video autoPlay muted loop src={MonFilm2}></video>

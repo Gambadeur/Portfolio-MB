@@ -9,11 +9,13 @@
 .leftHome {
     background-color:#F8F8F8;
     width: 50%;
+    height: 100%;
 }
 
 .rightHome {
     background-color: rgb(90, 198, 213);
     width: 50%;
+    height: 100%;
     animation: fullToRight 1s ease; 
 }
 
@@ -37,6 +39,7 @@
     animation: rotateBrackets 1s ease-in-out;
     animation-delay: 0.5s;
     transform: translateZ(30px);
+    -webkit-transform: translateZ(30px);
 }
 
 
@@ -62,11 +65,9 @@
     color: black;
     margin-left: 0;
     margin-right: 0;
-    
 }
 
 .logoCenter {
-    transform-style: preserve-3d;
     width: 170px;
     height: 170px;
     background-color: black;
@@ -74,6 +75,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 
@@ -86,16 +89,19 @@
     font-size: 20px;
     line-height: 30px;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .titleHome:nth-child(1) {
     transform: translateZ(23px);
+    -webkit-transform: translateZ(23px);
 }
 
 .titleHome:nth-child(2) {
     letter-spacing: 1.3px;
     font-variant: small-caps;
     transform: translateZ(40px);
+    -webkit-transform: translateZ(40px);
 }
 
 
@@ -115,7 +121,7 @@
     margin-top: 0px;
 }
 
-/*///////////////ANIMATE ITEMS///////////////*/
+/*///////////////  ITEMS  ///////////////*/
 
 .designItems > * {
      position: absolute;
@@ -127,25 +133,32 @@
     right: 24%;
     animation: updown linear 5s infinite;
     opacity: 0.6;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
 }
 
 .designItems img:nth-child(2){
-    bottom: 20%;
-    left: 16%;
+    width: 46px;
+    bottom: 14%;
+    left: 32%;
     animation: downup ease-in-out 9s infinite;
+    opacity: 0.7;
 }
 
 .designItems img:nth-child(3){
-    top: 10%;
-    left: 9%;
+    width: 50px;
+    bottom: 20%;
+    left: 6%;
     animation: updown ease-in 5s infinite;
+    opacity: 0.7;
+    transform: rotate(10deg);
+    -webkit-transform: rotate(10deg);
 }
 
 .designItems img:nth-child(4){
-    bottom: 20%;
+    bottom: 16%;
     right: 33%;
-    animation: downup ease-in 5.2s infinite;
+    animation: rotate360 linear 38s infinite;
     opacity: 0.5;
 }
 
@@ -161,7 +174,7 @@
 .designItems img:nth-child(6){
     top: 34%;
     left: 34%;
-    animation: updown ease-out 3.8s infinite;
+    animation: updown ease-out 5.3s infinite;
     animation-delay: 1.3s;
 }
 
@@ -183,7 +196,17 @@
     }
 }
 
-/*///////////////FIX ITEMS///////////////*/
+@keyframes rotate360 {
+    from {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg)
+    }
+}
+
 
 .designItems img:nth-child(7){
     width: 15px;
@@ -200,17 +223,18 @@
 }
 
 .designItems img:nth-child(9){
-    width: 17px;
-    bottom: 12%;
-    left: 38%;
-    opacity: 0.5;
+    width: 25px;
+    top: 20%;
+    left: 26%;
+    opacity: 0.6;
 }
 
 .designItems img:nth-child(10){
     width: 17px;
-    top: 43%;
-    left: 16%;
+    top: 50%;
+    left: 19%;
     opacity: 0.5;
+    animation: rotate360 linear 27s infinite;
 }
 
 .designItems img:nth-child(11){
@@ -225,4 +249,11 @@
     top: 9%;
     left: 40%;
     transform: rotate(180deg);
+}
+
+.designItems img:nth-child(13){
+    width: 8px;
+    top: 11%;
+    left: 7%;
+    animation: updown ease-out 6s infinite;
 }

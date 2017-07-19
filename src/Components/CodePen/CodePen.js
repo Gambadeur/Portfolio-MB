@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
 import './codepen.css';
-import arobase from './../../images/png/arobase.png';
 import dieseblanc from './../../images/png/diese.png';
-import deuxpts from './../../images/png/2pts.png';
-import crochetblanc from './../../images/png/crochetblancblanc.png';
 
 class CodePen extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             srcFrame : '//codepen.io/Gambadeur25/embed/ZyaVKV/?height=265&theme-id=light&default-tab=result&embed-version=2',
             hrefFrame : 'https://codepen.io/Gambadeur25/pen/ZyaVKV/',
+            displayLoadCp : 'none'
         }
         this.changeCP = this.changeCP.bind(this);
     }
@@ -23,6 +21,17 @@ class CodePen extends Component {
         })
     }
 
+    // componentWillUpdate(){
+    //     this.setState({
+    //         displayLoadCp: 'block'
+    //     })
+    // }
+
+    // componentDidUpdate(){
+    //     this.setState({
+    //         displayLoadCp: 'none'
+    //     })
+    // }
 
 
     render(){
@@ -38,23 +47,21 @@ class CodePen extends Component {
         return(
             <div className="containerCp">
                 <div className="containerLeftCp">
+                    <img src={dieseblanc} alt=""/>
                     <div className="itemsCp">   
                         <ul>
                             {codePenInfo.map( (item, index) => {
-                                return (
-                                <div className="licontainerCp">
-                                <li key={index} onClick={(e) =>this.changeCP(item)}>{item.name}</li>
-                                </div>
+                                return ( 
+                                    <div className="licontainerCp">
+                                    <li key={index} onClick={(e) =>this.changeCP(item)}>{item.name}</li>
+                                    </div>
                                 )
                             })}
                         </ul>
                     </div>
                 </div>
                 <div className="containerRightCp">
-                    <img src={arobase} alt=""/>
-                    <img src={dieseblanc} alt=""/>
-                    <img src={deuxpts} alt=""/>
-                    <img src={crochetblanc} alt=""/>
+                    <div className="loaderCp" style={{display : this.state.displayLoadCp}}></div>
                     <iframe height='300' scrolling='no' title='3D FX with mousetracking (React)' 
                     src= {this.state.srcFrame}
                     allowTransparency='false' 
@@ -62,10 +69,8 @@ class CodePen extends Component {
                     allowFullScreen='false' 
                     style={{width: '75%'}}>
                     See the Pen <a href={this.state.hrefFrame}>3D FX with mousetracking (React)</a> by Gambadeur25 (<a href='https://codepen.io/Gambadeur25'>@Gambadeur25</a>) on <a href='https://codepen.io'>CodePen</a>
-                    </iframe>
-                    
+                    </iframe>      
                 </div>
-               
             </div>
         )
     }
