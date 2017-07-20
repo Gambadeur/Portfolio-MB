@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './about.css';
-import fleche1Img from './../../images/png/fleche1.png';
-import fleche2Img from './../../images/png/fleche2.png'
+import fleche1Img from './../../images/png/fleche1BLEU.png';
+import fleche2Img from './../../images/png/fleche2BLEU.png';
 
 class About extends Component {
 

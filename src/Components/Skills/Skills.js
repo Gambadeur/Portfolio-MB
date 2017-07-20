@@ -33,6 +33,7 @@ import attentifImg from './../../images/png/attentif.png';
 import ptdexImg from './../../images/png/ptdex.png';
 import flexboxImg from './../../images/png/flexbox.png';
 import sassImg from './../../images/png/sass.png';
+import bemImg from './../../images/png/bem.png';
 import alecouteImg from './../../images/png/alecoute.png';
 import joueurImg from './../../images/png/joueur.png';
 import diplomateImg from './../../images/png/diplomate.png';
@@ -162,6 +163,7 @@ class Skills extends Component {
               <img src={sassImg} alt=""/>
               <img src={keyframesImg} alt=""/>
               <img src={dieseImg} alt=""/>
+              <img src={bemImg} alt=""/>
             </div>
           </Skill>
           <Skill idCard="12" titleCard={communicantTitle} colorCard="rgb(245, 248, 130)" widthCard="130" heightCard="100">

@@ -28,10 +28,8 @@
 
 .formContainer input:focus {
     border-bottom: 1.6px solid rgb(90, 198, 213);
+    outline:none;
 }
-
-
-
 
 
 .formContainer button {

@@ -17,8 +17,26 @@ class Portfolio extends Component {
     this.state = {
 
     }
+    this.handleScroll = this.handleScroll.bind(this);
   }  
 
+  componentDidMount() {
+    document.addEventListener('scroll', this.handleScroll);
+    //  console.log('reffff :' + this.refs.contactref)
+  }
+
+  // componentWillUnmount() {
+  //   window.removeEventListener('scroll', this.handleScroll);
+  // }
+
+
+  handleScroll(event) {
+   
+    // console.log(window.scrollY)
+    if (document.body.scrollTop > 50) {
+      console.log('50')
+    }
+  }
 
   render() {
 
@@ -43,9 +61,11 @@ class Portfolio extends Component {
                     <About />
                   </ScrollableAnchor>
                   <ScrollableAnchor id={'contact'} >
-                    <Contact />
+                    <div ref='contactref'>
+                    <Contact/>
+                    </div>
                   </ScrollableAnchor>
-              <Footer />
+                  <Footer />
             </div>
       </div>
     );
