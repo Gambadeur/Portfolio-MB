@@ -4,7 +4,9 @@ import origamiSvg from './../../images/svg/origami.svg';
 import codepenSvg from './../../images/png/codepen.png';
 import MonFilm2 from './../../images/video/Monfilm2.mp4';
 import ptdinterroImg from './../../images/png/ptdinterro.png';
-// import { CSSTransitionGroup } from 'react-transition-group' 
+import bracketRight from './../../images/png/bracketLeftWhite.png';
+import bracketLeft from './../../images/png/bracketRightWhite.png';
+
 
 class Menu extends Component {
   constructor(){
@@ -36,7 +38,10 @@ class Menu extends Component {
         <div className="animMenuContainer">
             <div className="HomeItemsAnim" style={{display: this.state.displayIconHome}}>
               <div className="circleMenuHome">
-                <div className="bracketsMenuHome"> {"{"} {" }"}</div>
+                <div className="containerBracketsMenu">
+                  <img className="bracketleftmenuItem" src={bracketLeft} alt=""/>
+                  <img className="bracketrightmenuItem" src={bracketRight} alt=""/>
+                </div>
               </div>
             </div>
             <div className="SkillsItemsAnim" style={{display: this.state.displayIconSkills}}>

@@ -29,28 +29,8 @@
     }
 }
 
+/*////////////////// LOGO HOME //////////////////*/
 
-.bracketsHome {
-    color: white;
-    font-size: 70px;
-    transform: translateZ(14px);
-    margin-top: 0px;
-    font-family: 'Helvetica', sans-serif; 
-    animation: rotateBrackets 1s ease-in-out;
-    animation-delay: 0.5s;
-    transform: translateZ(30px);
-    -webkit-transform: translateZ(30px);
-}
-
-
-@keyframes rotateBrackets {
-    from {
-        transform: rotate(0deg)
-    }
-    to {
-        transform: rotate(360deg)
-    }
-}
 
 .logoContainer {
     position: absolute;
@@ -79,6 +59,39 @@
     -webkit-transform-style: preserve-3d;
 }
 
+.containerBrackets {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(14px);
+    animation: rotateBrackets 1s ease-in-out;
+    animation-delay: 0.5s;
+    transform: translateZ(30px);
+    -webkit-transform: translateZ(30px);
+}
+
+.logoCenter img {
+    width: 27px;
+}
+
+.bracketlefthome {
+    padding-right: 11px; 
+}
+
+.bracketrighthome {
+    padding-left: 11px; 
+}
+
+@keyframes rotateBrackets {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
 
 
 

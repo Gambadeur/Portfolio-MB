@@ -13,6 +13,8 @@ import egalblanc from './../../images/png/egalblanc.png';
 import egalbleu from './../../images/png/egalbleu.png';
 import pointvirguleblanc from './../../images/png/ptvirguleblanc.png';
 import arobasebleu from './../../images/png/arobasebleu.png';
+import bracketRight from './../../images/png/bracketLeftWhite.png';
+import bracketLeft from './../../images/png/bracketRightWhite.png';
 
 class Home extends Component {
   constructor(props){
@@ -77,7 +79,11 @@ class Home extends Component {
         <div className="rightHome"></div>
         <div className="logoContainer">
           <div className="logoCenter" style={mouseAction} >
-            <div className="bracketsHome"> {"{"} {" }"}</div>
+            {/* <div className="bracketsHome"> {"{"} {" }"}</div> */}
+            <div className="containerBrackets">
+              <img className="bracketlefthome" src={bracketLeft} alt=""/>
+              <img className="bracketrighthome" src={bracketRight} alt=""/>
+            </div>
           </div>
           <div className="titleHome">
             <p>MATHIEU BLARDONE<br />

@@ -82,10 +82,6 @@
     align-items: center;
 }
 
-.animMenuContainer img{
-    margin-left: 10%;
-}
-
 .HomeItemsAnim, .SkillsItemsAnim, .CpItemsAnim, .ContactAnim, .AboutItemsAnim  {
     opacity: 1;
     animation: opacityenter 0.8s ease;
@@ -94,6 +90,7 @@
     align-self: center;
     width: 100%;
     margin: auto;
+    margin-left: 10%;
 }
 
 @keyframes opacityenter {
@@ -107,6 +104,8 @@
     }
 }
 
+/*//////////////// LOGO HOME ///////////////*/
+
 
 .circleMenuHome {
     color: white;
@@ -116,17 +115,34 @@
     border-radius: 250px;
     border: solid white 10px;
     display: flex;
-    margin-left: 70px;    
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;     
 }
 
-.bracketsMenuHome {
-    margin: auto;
-    color: white;
-    font-size: 170px;
-    font-family: 'Courrier', sans-serif;
+
+.containerBracketsMenu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     animation: rotateBracketsMenuHome 1.4s ease-in-out;
     -webkit-animation: rotateBracketsMenuHome 1.4s ease-in-out;
 }
+
+.containerBracketsMenu img {
+    width: 60px;
+}
+
+.bracketleftmenuItem {
+    padding-right: 18px; 
+}
+
+.bracketrightmenuItem {
+    padding-left: 18px;
+}
+
 
 @keyframes rotateBracketsMenuHome {
     from {
@@ -145,37 +161,12 @@
 
 .SkillsItemsAnim img {
     height: 300px;
-   
 }
 
 .CpItemsAnim img {
     height: 300px;
     color: white;
 }
-
-
-/*
-.menuAnim-appear{
-    width: 5%;
-    opacity: 0;
-}
-
-.menuAnim-appear.menuAnim-appear-active{
-    opacity: 1;
-    width: 85%;
-    transition: width 1000ms ease-in;
-    transition: opacity 1000ms ease-in;
-    transition-delay: 5s;
-}
-
-.menuAnim-leave{
-    width: 85%;
-}
-
-.menuAnim-leave.menuAnim-leave-active{
-    width: 0%;
-    transition: width 500ms ease-in;
-}*/
 
 .ContactAnim {
     width: 40%;

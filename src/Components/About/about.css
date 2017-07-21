@@ -16,21 +16,17 @@
     text-align: justify;
 }
 
-/* .aboutPart1::before {
-    position: absolute;
-    content: "<";
-    font-size: 100px;
-    left: -70px;
-    top: -80px;
+.animBorderAbout {
+    padding: 8px;
 }
 
-.aboutPart1::after {
-    position: absolute;
-    content: ">";
-    font-size: 100px;
-    right: -70px;
-    bottom: -80px;
-} */
+.animBorderAbout:hover {
+    border: 2px rgb(90, 198, 213) solid;
+    border-left: 4px solid rgb(90, 198, 213);
+    border-right: 4px solid rgb(90, 198, 213);
+    border-radius: 4px;
+    background-color: white;
+}
 
 .aboutContainer > * {
     position: absolute;
