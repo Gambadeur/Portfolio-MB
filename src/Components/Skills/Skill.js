@@ -12,7 +12,6 @@ class Skill extends Component {
 }
 
 isCardActive() {
-  console.log('actifffff')
   this.setState({
     handleCard : true
   })

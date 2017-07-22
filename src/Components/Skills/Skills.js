@@ -116,7 +116,7 @@ class Skills extends Component {
           </Skill>
           <Skill idCard="5" titleCard={musiqueTitle} colorCard="#191919" widthCard="110" heightCard="220">
             <div className="skillDetailContainer skillDetail5">
-              <a href="http://www.sweetwax-recordings.com/"><img src={logosweetImg} alt=""/></a>
+              <a target="_blank" rel="noopener noreferrer" href="http://www.sweetwax-recordings.com/" ><img src={logosweetImg} alt=""/></a>
             </div>
           </Skill>
           <Skill idCard="6" titleCard={rigoureuxTitle} colorCard="#EA2E49" widthCard="110" heightCard="220">

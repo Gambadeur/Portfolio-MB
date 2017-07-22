@@ -79,7 +79,6 @@ class Home extends Component {
         <div className="rightHome"></div>
         <div className="logoContainer">
           <div className="logoCenter" style={mouseAction} >
-            {/* <div className="bracketsHome"> {"{"} {" }"}</div> */}
             <div className="containerBrackets">
               <img className="bracketlefthome" src={bracketLeft} alt=""/>
               <img className="bracketrighthome" src={bracketRight} alt=""/>
