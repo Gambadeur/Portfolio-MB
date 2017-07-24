@@ -26,8 +26,8 @@ class Footer extends Component {
         </div>
         <div className="gridFooter">
           <p>Mathieu Blardone</p>
-            <p>Creativ Front-End / Developpeur Junior</p>
-            <p>mathieublardone(@)gmail.com</p>
+            <p>Creativ Front-End</p>
+            <p>Developpeur Junior</p>
             <div className="logoFooter">
                <p>Site powered by React</p>
                   <div className="animLogoFooter">

@@ -6,8 +6,8 @@ import ptdinterro from './../../images/png/ptdinterro.png';
 
 class About extends Component {
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             displayAbout1 : true,
             displayAbout2 : true,
@@ -20,6 +20,17 @@ class About extends Component {
         this.openAbout3 = this.openAbout3.bind(this);
         this.closedAbout3 = this.closedAbout3.bind(this);
     }
+
+    componentWillMount() {
+        if(window.innerWidth < 1280){
+            this.setState({
+            displayAbout1: false,
+            displayAbout2 : false,
+            displayAbout3 : false,
+            })
+        }
+    }
+
 
     openAbout1() {
         this.setState ({
@@ -60,19 +71,19 @@ class About extends Component {
     render() {
         return (
             <div className="aboutContainer">
-                <div className="aboutPart1 animBorderAbout" onMouseEnter={this.openAbout1} onMouseLeave={this.closedAbout1} >
+                <div className="aboutPart1 animBorderAbout" onMouseEnter={window.innerWidth < 1280 ? null : this.openAbout1} onMouseLeave={window.innerWidth < 1280 ? null : this.closedAbout1} >
                     <div className="aboutPart1Intro" style={{opacity:this.state.displayAbout1 ? 1 : 0}}>
                         <img src={ptdinterro} alt=""/>
                     </div>
                     <p>Documentaliste, agent d’accueil, archiviste, dj, barmaid, iconographe… Mon parcours est loin d’être linéaire et ce sont justement tous ces détours empruntés qui me font vibrer. C’est pour cela - en plus de mon goût certain pour le code et la programmation - que j’ai choisi de m’orienter vers le développement web, et plus spécifiquement vers l’animation. </p>   
                 </div>
-                <div className="aboutPart2 animBorderAbout" onMouseEnter={this.openAbout2} onMouseLeave={this.closedAbout2} >
+                <div className="aboutPart2 animBorderAbout" onMouseEnter={window.innerWidth < 1280 ? null : this.openAbout2} onMouseLeave={window.innerWidth < 1280 ? null : this.closedAbout2} >
                     <div className="aboutPart2Intro" style={{opacity:this.state.displayAbout2 ? 1 : 0}}>
                         <img src={ptdinterro} alt=""/>
                     </div>
                     <p>Exercer un métier qui me passionne tout en poursuivant mon périple intersectoriel : rencontrer des personnes qui ne se ressemblent pas, m’impliquer dans de sages projets comme dans d’autres, plus fous. </p>    
                 </div>
-                <div className="aboutPart3 animBorderAbout" onMouseEnter={this.openAbout3} onMouseLeave={this.closedAbout3}>
+                <div className="aboutPart3 animBorderAbout" onMouseEnter={window.innerWidth < 1280 ? null : this.openAbout3} onMouseLeave={window.innerWidth < 1280 ? null : this.closedAbout3}>
                     <div className="aboutPart3Intro" style={{opacity:this.state.displayAbout3 ? 1 : 0}}>
                         <img src={ptdinterro} alt=""/>
                     </div>

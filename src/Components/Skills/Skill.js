@@ -11,6 +11,14 @@ class Skill extends Component {
     this.isCardOff = this.isCardOff.bind(this)
 }
 
+componentWillMount() {
+  if(window.innerWidth < 1280){
+    this.setState({
+      handleCard: true
+    })
+  }
+}
+
 isCardActive() {
   this.setState({
     handleCard : true
@@ -29,8 +37,8 @@ isCardOff() {
         <div className="skillCardRelative">
             <div 
             className={"skillCardAbsolute skillCard"+this.props.idCard} 
-            onMouseEnter={this.isCardActive} 
-            onMouseLeave={this.isCardOff}
+            onMouseEnter={window.innerWidth < 1280 ? null : this.isCardActive} 
+            onMouseLeave={window.innerWidth < 1280 ? null : this.isCardOff}
             style={{backgroundColor: this.state.handleCard ? this.props.colorCard : 'rgba(255, 255, 255, 0.6)',
             borderColor: this.props.colorCard,
             width: this.state.handleCard ? Number(this.props.widthCard)+5+"%" : this.props.widthCard+"%",
