@@ -12,7 +12,6 @@ class Footer extends Component {
 
       <div className="footerContainer">
         <div className="gridFooter">
-          
           <div className="arrowContactContainer">
             <a target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DACKaWYTMaU/bh9tdg8PShxAPYQwTRD_Vg/view?utm_content=DACKaWYTMaU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
               <p>Mon CV</p>
@@ -26,8 +25,7 @@ class Footer extends Component {
         </div>
         <div className="gridFooter">
           <p>Mathieu Blardone</p>
-            <p>Creativ Front-End</p>
-            <p>Developpeur Junior</p>
+            <p>Creative Front-End / Developpeur Junior</p>
             <div className="logoFooter">
                <p>Site powered by React</p>
                   <div className="animLogoFooter">

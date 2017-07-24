@@ -75,3 +75,12 @@
   transform: rotate(45deg) translate(0px, -11px);
   width: 100%;
   transition-delay: 0.10s; }
+
+/*//////////////////////////////////////////////////*/
+/*////////////////////////RESPONSIVE//////////////////////////*/
+/*//////////////////////////////////////////////////*/
+@media (max-width: 360px) {
+  .BurgerMenuContainer {
+    width: 45px;
+    height: 45px;
+    left: 10px; } }
