@@ -40,8 +40,6 @@ class Home extends Component {
       x = x + (-followX - x) * (1/30);
       y = y + (-followY - y) * (1/30);
 
-      // window.scrollTo(400, 500)
-
       this.setState({
           offsetX: x,
           offsetY: y
@@ -52,10 +50,10 @@ class Home extends Component {
   render() {
 
   let mouseAction = {
-            transform: 
-                `perspective(600px)
-                rotateY(${this.state.offsetY}deg)
-                rotateX(${this.state.offsetX}deg)`
+    transform: 
+        `perspective(600px)
+        rotateY(${this.state.offsetY}deg)
+        rotateX(${this.state.offsetX}deg)`
   }
 
     return (

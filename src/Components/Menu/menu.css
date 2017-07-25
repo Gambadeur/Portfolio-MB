@@ -24,7 +24,7 @@
 
 .flexMenuContainer {
     width: 100%;
-    height: 100%;
+    height: 100%; 
     display: flex;
 }
 
@@ -182,4 +182,47 @@
 .AboutItemsAnim img {
     height: 270px;
     margin-left: 20%;
+}
+
+
+/*//////////////////////////////////////////////////*/
+/*////////////////////////RESPONSIVE//////////////////////////*/
+/*//////////////////////////////////////////////////*/
+
+
+@media (max-width: 1000px) {
+
+    .animMenuContainer {
+        display: none;
+    }
+
+    .menuItemContainer {
+        width: 100%;
+        padding: 0px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 365px) {
+
+    .menuContainer {
+        width: 75%;
+        left: 50px;
+        animation: elasticMenu 0.3s ease-out;
+}
+
+    @keyframes elasticMenu {
+        from{
+            width: 0%;
+            left: 60%;
+        }
+        to {
+            width: 75%;
+            left: 50px;
+        }
+    }   
 }
