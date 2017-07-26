@@ -15,31 +15,11 @@ class Portfolio extends Component {
   constructor(props){
     super(props)
     this.state = {
-
     }
-    this.handleScroll = this.handleScroll.bind(this);
   }  
 
-  componentDidMount() {
-    document.addEventListener('scroll', this.handleScroll);
-    //  console.log('reffff :' + this.refs.contactref)
-  }
-
-  // componentWillUnmount() {
-  //   window.removeEventListener('scroll', this.handleScroll);
-  // }
-
-
-  handleScroll(event) {
-   
-    // console.log(window.scrollY)
-    if (document.body.scrollTop > 50) {
-      console.log('50')
-    }
-  }
 
   render() {
-
     return (
         <div className="mainContainer">
            <div className="containeranimBlackIntro">

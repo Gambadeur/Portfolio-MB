@@ -19,19 +19,19 @@ class Footer extends Component {
                 <span></span>
                 <span></span>
                 <span></span>
-            </div>   
+              </div>   
             </a>
           </div>
         </div>
         <div className="gridFooter">
           <p>Mathieu Blardone</p>
-            <p>Creative Front-End / Developpeur Junior</p>
-            <div className="logoFooter">
-               <p>Site powered by React</p>
-                  <div className="animLogoFooter">
-                    <img src={reactLogo} alt=""/>
-                  </div>
-            </div>
+          <p>Creative Front-End / Developpeur Junior</p>
+          <div className="logoFooter">
+            <p>Site powered by React</p>
+              <div className="animLogoFooter">
+                <img src={reactLogo} alt=""/>
+              </div>
+          </div>
         </div>
         <div className="gridFooter">
             <div className="containerLeftFooter">
@@ -48,7 +48,20 @@ class Footer extends Component {
               <p>UP</p>
               </ScrollToTop>
             </div>
-
+        </div>
+        {/* FOOTER RESPONSIVE < 360*/}
+        <div className="footerMobile">
+          <p>Mathieu Blardone</p>
+          <p>Creative Front-End / Developpeur Junior</p>
+          <a target="_blank" rel="noopener noreferrer" href="https://www.canva.com/design/DACKaWYTMaU/bh9tdg8PShxAPYQwTRD_Vg/view?utm_content=DACKaWYTMaU&utm_campaign=designshare&utm_medium=link&utm_source=sharebutton">
+            <p>Mon CV</p>  
+          </a>
+          <div className="logoFooter">
+            <p>Site powered by React</p>
+              <div className="animLogoFooter">
+                <img src={reactLogo} alt=""/>
+              </div>
+          </div>
         </div>
       </div>
     );

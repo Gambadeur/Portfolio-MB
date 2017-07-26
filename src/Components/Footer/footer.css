@@ -4,7 +4,6 @@
     margin-bottom: 40px;
     display: flex;
     border: 1px solid rgb(90, 198, 213); 
-   
 }
 
 .gridFooter{
@@ -186,6 +185,11 @@
     margin: 13px;
 }
 
+.footerMobile {
+    display: none;
+    text-align: center;
+}
+
 /*//////////////////////////////////////////////////*/
 /*////////////////////////RESPONSIVE//////////////////////////*/
 /*//////////////////////////////////////////////////*/
@@ -214,3 +218,27 @@
         justify-content: center;
     }
 }
+
+@media (max-width: 360px) {
+    .gridFooter {
+        display: none;
+    }
+
+    .footerMobile {
+        display: block;
+        text-align: center;
+        font-size: 11px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .footerMobile a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+    .logoFooter {
+        margin-bottom: 8px;
+    }
+} 
